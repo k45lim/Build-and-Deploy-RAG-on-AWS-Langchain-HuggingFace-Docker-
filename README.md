@@ -1,1 +1,2 @@
-# Build-and-Deploy-RAG-on-AWS-Langchain-HuggingFace-Docker-
+# Develop and deploy a Retrieval Augmented Generative model using AWS Lambda, ECR, Langchain,HuggingFace and Docker
+ 
