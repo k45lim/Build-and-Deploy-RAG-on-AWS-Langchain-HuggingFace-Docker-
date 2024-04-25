@@ -16,7 +16,7 @@ payload = {
     "top_p": 0.9
 }
 
-json.dump(payload)
+body = json.dumps(payload)
 model_id = "meta.llama2-70b-chat-v1"
 
 response = bedrock.invoke_model(
@@ -26,7 +26,7 @@ response = bedrock.invoke_model(
     contentType="application/json"
 )
 
-response_body = json.loads(response, get("body").read())
+response_body = json.loads(response.get("body").read())
 response_text = response_body["generation"]
 
 
